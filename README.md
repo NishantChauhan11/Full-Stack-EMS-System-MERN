@@ -2,13 +2,15 @@
 
 A full-stack Employee Management System built using the MERN Stack (MongoDB, Express.js, React.js, and Node.js). The application provides role-based access for Admins and Employees and includes attendance tracking, leave management, payslip generation, email notifications, and background job scheduling.
 
-## 🚀 Live Demo
+---
 
-Live Application:
+# 🚀 Live Demo
 
 https://full-stack-ems-system-mern-kappa.vercel.app/dashboard
 
-## 📂 GitHub Repository
+---
+
+# 📂 GitHub Repository
 
 https://github.com/NishantChauhan11/Full-Stack-EMS-System-MERN
 
@@ -18,20 +20,20 @@ https://github.com/NishantChauhan11/Full-Stack-EMS-System-MERN
 
 The Employee Management System (EMS) is a real-world full-stack web application designed to simplify employee administration within an organization.
 
-The system enables administrators to manage employees, monitor attendance, process leave requests, generate payslips, and send automated email notifications. Employees can access their profiles, check attendance records, apply for leave, and view payslips.
+The system enables administrators to manage employees, monitor attendance, process leave requests, generate payslips, and send automated email notifications. Employees can manage their profiles, check attendance records, apply for leave, and access payslips.
 
 This project demonstrates practical implementation of modern web development technologies and enterprise-level application architecture.
 
 ---
 
-# ✨ Key Features
+# ✨ Features
 
 ## Admin Features
 
 * Secure Admin Authentication
 * Employee Management (Create, Read, Update, Delete)
 * Attendance Monitoring
-* Leave Request Approval/Rejection
+* Leave Request Approval and Rejection
 * Payslip Generation
 * Dashboard Analytics
 * Email Notifications
@@ -52,85 +54,31 @@ This project demonstrates practical implementation of modern web development tec
 
 ## Frontend
 
-### React.js
-
-A JavaScript library used for building fast, reusable, and interactive user interfaces.
-
-### Vite
-
-A modern frontend build tool that provides faster development and optimized production builds.
-
-### Tailwind CSS
-
-A utility-first CSS framework used for creating responsive and modern user interfaces efficiently.
-
-### React Router DOM
-
-Used for client-side routing and navigation between pages without full page reloads.
-
-### Axios
-
-A promise-based HTTP client used for communicating with backend APIs.
-
----
+* React.js
+* Vite
+* Tailwind CSS
+* React Router DOM
+* Axios
 
 ## Backend
 
-### Node.js
-
-A JavaScript runtime environment that allows server-side application development.
-
-### Express.js
-
-A lightweight backend framework used for building RESTful APIs and handling server logic.
-
-### JWT Authentication
-
-Used for secure user authentication and authorization through token-based security.
-
-### Middleware
-
-Used to validate requests, protect routes, and manage application-level security.
-
----
+* Node.js
+* Express.js
+* JWT Authentication
+* Middleware
 
 ## Database
 
-### MongoDB Atlas
-
-A cloud-hosted NoSQL database used to store application data securely and efficiently.
-
-### Mongoose
-
-An Object Data Modeling (ODM) library that simplifies MongoDB database operations.
-
----
+* MongoDB Atlas
+* Mongoose
 
 ## Background Jobs
 
-### Inngest
-
-Used for scheduling background tasks, event-driven workflows, and automated cron jobs.
-
-Examples:
-
-* Scheduled tasks
-* Automated processing
-* Event-based workflows
-
----
+* Inngest
 
 ## Email Service
 
-### Brevo (SMTP)
-
-Used for sending automated emails and notifications to employees and administrators.
-
-Examples:
-
-* Account notifications
-* Leave updates
-* System alerts
+* Brevo SMTP
 
 ---
 
@@ -190,9 +138,9 @@ FullStack-EMS
 
 # 🔐 Authentication & Authorization
 
-The application uses JWT (JSON Web Tokens) for secure authentication.
+The application uses JWT (JSON Web Tokens) for secure authentication and authorization.
 
-### Roles Supported
+### Supported Roles
 
 * Admin
 * Employee
@@ -234,21 +182,14 @@ git clone https://github.com/NishantChauhan11/Full-Stack-EMS-System-MERN.git
 
 ---
 
-## Setup Server
-
-Navigate to server folder:
+## Setup Backend
 
 ```bash
 cd server
-```
-
-Install dependencies:
-
-```bash
 npm install
 ```
 
-Configure environment variables:
+Configure the following environment variables:
 
 * MongoDB URI
 * JWT Secret
@@ -262,7 +203,7 @@ Seed Admin User:
 npm run seed
 ```
 
-Run Server:
+Run Backend Server:
 
 ```bash
 npm run server
@@ -270,23 +211,11 @@ npm run server
 
 ---
 
-## Setup Client
-
-Navigate to client folder:
+## Setup Frontend
 
 ```bash
 cd client
-```
-
-Install dependencies:
-
-```bash
 npm install
-```
-
-Run Application:
-
-```bash
 npm run dev
 ```
 
@@ -294,15 +223,15 @@ npm run dev
 
 # 🌐 Deployment
 
-## Frontend Deployment
+## Frontend
 
 * Vercel
 
-## Backend Deployment
+## Backend
 
 * Vercel
 
-## Database Hosting
+## Database
 
 * MongoDB Atlas
 
@@ -314,42 +243,29 @@ Through this project, I gained practical experience in:
 
 * Full Stack MERN Development
 * REST API Development
-* Authentication & Authorization
+* Authentication and Authorization
 * MongoDB Database Design
 * Backend Architecture
 * Frontend Component Design
 * Email Integration
 * Background Job Scheduling
 * Cloud Deployment
-* Git & GitHub Workflow
+* Git and GitHub Workflow
 
 ---
 
 # 💼 Resume Highlights
 
-* Developed a full-stack Employee Management System using MERN Stack.
+* Developed a full-stack Employee Management System using the MERN Stack.
 * Implemented role-based authentication and authorization.
 * Built attendance, leave management, and payslip modules.
 * Integrated MongoDB Atlas for cloud database management.
-* Configured Inngest for event-driven background workflows.
+* Configured Inngest for background workflows and scheduled tasks.
 * Implemented Brevo SMTP service for automated email notifications.
 * Deployed frontend and backend applications using Vercel.
 
 ---
 
-# 👨‍💻 Author
-
-Nishant Chauhan
-
-B.Tech Computer Science Engineering
+# 📧 Contact
 
 Email: [26nishantchauhan@gmail.com](mailto:26nishantchauhan@gmail.com)
-
-GitHub:
-https://github.com/NishantChauhan11
-
----
-
-# 📜 License
-
-This project is intended for educational, learning, and portfolio purposes.
