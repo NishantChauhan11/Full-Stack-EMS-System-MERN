@@ -1,6 +1,6 @@
 # Full Stack Employee Management System (EMS)
 
-A full-stack Employee Management System built using the MERN Stack (MongoDB, Express.js, React.js, and Node.js). The application provides role-based access for Admins and Employees and includes employee management, attendance tracking, leave management, payslip generation, and dashboard analytics.
+A full-stack Employee Management System built using the MERN Stack (MongoDB, Express.js, React.js, and Node.js). The application provides role-based access for Admins and Employees and includes employee management, attendance tracking, leave management, payslip generation, email notifications, and dashboard analytics.
 
 ---
 
@@ -18,11 +18,11 @@ https://github.com/NishantChauhan11/Full-Stack-EMS-System-MERN
 
 # 📌 Project Overview
 
-The Employee Management System (EMS) is a full-stack web application designed to simplify employee administration inside an organization.
+The Employee Management System (EMS) is a full-stack web application designed to simplify employee administration within an organization.
 
-Administrators can manage employees, monitor attendance, process leave requests, and generate payslips. Employees can log in to their accounts, view their profiles, check attendance records, apply for leave, and access payslips.
+Administrators can manage employees, monitor attendance, process leave requests, generate payslips, and send automated email notifications. Employees can log in to their accounts, view their profiles, check attendance records, apply for leave, and access payslips.
 
-This project demonstrates practical implementation of MERN stack technologies and role-based access control.
+This project demonstrates practical implementation of MERN Stack technologies, REST APIs, authentication, and role-based access control.
 
 ---
 
@@ -36,6 +36,7 @@ This project demonstrates practical implementation of MERN stack technologies an
 * Leave Request Approval and Rejection
 * Payslip Generation
 * Dashboard Analytics
+* Email Notifications
 * Role-Based Access Control
 
 ## Employee Features
@@ -45,6 +46,7 @@ This project demonstrates practical implementation of MERN stack technologies an
 * Attendance Tracking
 * Leave Application System
 * Payslip Access
+* Email Notifications
 
 ---
 
@@ -73,7 +75,7 @@ This project demonstrates practical implementation of MERN stack technologies an
 ## Additional Services
 
 * Inngest for background jobs and scheduled tasks
-* Brevo SMTP configuration support
+* Brevo SMTP for automated email notifications
 
 ---
 
@@ -111,6 +113,8 @@ FullStack-EMS
 ├── client
 │   ├── public
 │   ├── src
+│   ├── components
+│   ├── pages
 │   ├── package.json
 │   └── vite.config.js
 │
@@ -139,7 +143,7 @@ The application uses JWT (JSON Web Tokens) for secure authentication and authori
 * Admin
 * Employee
 
-Protected routes ensure that only authorized users can access sensitive functionalities.
+Protected routes ensure that only authorized users can access sensitive functionalities and resources.
 
 ---
 
@@ -151,6 +155,8 @@ Protected routes ensure that only authorized users can access sensitive function
 * Leave Management Module
 * Payslip Management Module
 * Dashboard Analytics Module
+* Email Notification Module
+* Background Job Scheduling Module
 
 ---
 
@@ -160,6 +166,8 @@ Protected routes ensure that only authorized users can access sensitive function
 
 * Node.js
 * MongoDB Atlas Account
+* Brevo Account
+* Inngest Account
 * Git
 
 ---
@@ -174,8 +182,15 @@ git clone https://github.com/NishantChauhan11/Full-Stack-EMS-System-MERN.git
 
 ## Setup Backend
 
+Navigate to server folder:
+
 ```bash
 cd server
+```
+
+Install dependencies:
+
+```bash
 npm install
 ```
 
@@ -183,6 +198,8 @@ Configure environment variables:
 
 * MongoDB URI
 * JWT Secret
+* Brevo SMTP Credentials
+* Inngest Credentials
 * Admin Email
 
 Create Admin User:
@@ -201,9 +218,21 @@ npm run server
 
 ## Setup Frontend
 
+Navigate to client folder:
+
 ```bash
 cd client
+```
+
+Install dependencies:
+
+```bash
 npm install
+```
+
+Run Frontend Application:
+
+```bash
 npm run dev
 ```
 
@@ -235,6 +264,8 @@ Through this project, I gained practical experience in:
 * MongoDB Database Design
 * Backend Architecture
 * Frontend Component Design
+* Email Service Integration
+* Background Job Scheduling
 * Cloud Deployment
 * Git and GitHub Workflow
 
@@ -246,6 +277,8 @@ Through this project, I gained practical experience in:
 * Implemented role-based authentication and authorization using JWT.
 * Built employee, attendance, leave, and payslip management modules.
 * Integrated MongoDB Atlas for cloud database management.
+* Implemented automated email notifications using Brevo SMTP.
+* Integrated background job scheduling using Inngest.
 * Developed REST APIs using Express.js and Node.js.
 * Deployed frontend and backend applications using Vercel.
 
